@@ -1,4 +1,4 @@
-/* GENERAL RESET */
+
 html, body {
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@ html, body {
   background-color: #f9f9f9;
 }
 
-/* HEADER STYLES */
+
 .head {
   display: flex;
   justify-content: space-between;
@@ -52,7 +52,7 @@ html, body {
   color: #f01010;
 }
 
-/* BACKGROUND IMAGE SECTION BELOW HEADER */
+
 #m_im {
   background-image: url('image copy.png');
   background-size: cover;
@@ -62,7 +62,7 @@ html, body {
   width: 100vw;
 }
 
-/* FORM CONTAINER (for login or work form) */
+
 .login-container,
 .form-container {
   max-width: 600px;
@@ -94,7 +94,7 @@ input, select, textarea {
   box-sizing: border-box;
 }
 
-/* BUTTON STYLES */
+
 button {
   width: 100%;
   padding: 15px;
@@ -110,7 +110,7 @@ button:hover {
   background-color: #bb8c4d;
 }
 
-/* ADDITIONAL LINKS (like Forgot Password) */
+
 .links {
   text-align: center;
   margin-top: 10px;
@@ -124,3 +124,4 @@ button:hover {
 .links a:hover {
   text-decoration: underline;
 }
+
