@@ -1,0 +1,112 @@
+.head {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: 100px;
+    padding: 0 30px;
+    background-color:rgb(202, 156, 99);
+    color: white;
+    box-sizing: border-box;
+    
+}
+
+html, body {
+  margin: 0;     
+  padding: 0;    
+  overflow-x: hidden; 
+}
+
+#m_im {
+  background-image: url('image copy.png'); 
+  background-size: cover;       /* <--- CHANGE THIS TO 'cover' */
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: calc(100vh - 0vh); /* Adjust height to fill screen below header */
+  width: 100vw;                 
+}
+#pic {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+#he {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#li {
+    display: flex;
+    gap: 20px;
+    
+}
+
+#li a {
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+    
+}
+
+
+
+
+.login-form, .reg-form {
+  width: 100%;
+  max-width: 450px;
+  margin: 50px auto;
+  padding: 35px;
+  background-color: white;  
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  border: 1px solid #d2a368; 
+}
+
+h2 {
+  text-align: center;
+  color: black;  
+}
+.login-form input[type="email"],
+.login-form input[type="password"],
+.reg-form input[type="email"],
+.reg-form input[type="password"],
+.reg-form input[type="text"] {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: 1px solid #d2a368;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #fff8f1;
+  color: black;
+}
+
+#but, 
+.login-form button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #d2a368;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#but:hover, 
+.login-form button:hover {
+  background-color: #bb8c4d;
+}
+
+input::placeholder {
+  color: #a67b4e;
+}

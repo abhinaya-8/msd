@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skill Sharing Network</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="head">
+    <img src="image.png" alt="logo" id="pic" />
+    <h1 id="he">Find And Grab</h1>
+    <nav id="li">
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <div class="login-container">
+    <form class="login-form" onsubmit="handleLogin(event)">
+      <h2>Login</h2>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+
+      <label>I want to:</label><br>
+      <input type="radio" id="work" name="role" value="work" required />
+      <label for="work">Work</label>
+
+      <input type="radio" id="hire" name="role" value="hire" required />
+      <label for="hire">Hire</label><br><br>
+
+      <button type="submit" id="but">Log In</button>
+
+      <div class="links">
+        <p>Don't have an account? <a href="register.html">Register</a></p>
+        <p><a href="#">Forgot Password?</a></p>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function handleLogin(e) {
+      e.preventDefault();
+
+      const role = document.querySelector('input[name="role"]:checked').value;
+
+      if (role === "work") {
+        window.location.href = "work.html";
+      } else if (role === "hire") {
+        window.location.href = "home.html";
+      }
+    }
+  </script>
+</body>
+</html>
